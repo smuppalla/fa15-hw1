@@ -1,17 +1,20 @@
 def squared_sum(a, b)
-  # Q1 CODE HERE
+    (a + b) * (a + b)
 end
 
 def sort_array_plus_one(a)
-  # Q2 CODE HERE
+    nums = a.sort
+    nums = nums.map{|x| x + 1}
+    nums
+
 end
 
 def combine_name(first_name, last_name)
-  # Q3 CODE HERE
+    first_name + " " + last_name
 end
 
-def blockin_time(a)
+def blockin_time(t)
   # DO NOT EDIT THIS CODE BELOW
   require './foobar'
-  Foobar.baz a
+  Foobar.baz t
 end
